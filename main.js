@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 const Discord = require("discord.js")
 const client = new Discord.Client();
-const data = require("./data.json")
+const data = require('dotenv').config().parsed
 const path = require("path")
 
 const Neko = require("neko-love");
