@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <section style="background-color: #202225;" class="hero is-danger is-fullheight is-centered">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <center>
+            <img style="border-radius: 1000px; display: block;" src="<%= avatar %>">
+            </center>
+            <i style="position: absolute;left: 710px;top: 90px;color: #202225;" class="fas fa-circle fa-2x"></i>
+            <% if (status === "offline") { %>
+            <i style="position: absolute;left: 715px;top: 98px;color: rgb(116, 127, 141); font-size: 1.25em;" class="fas fa-dot-circle fa-lg"></i>
+            <p class="subtitle is-5">On dirait bien que Lana est hors ligne.</p>
+            <p class="subtitle is-5">Tennez une photo de neko afin de patienter son arriver</p>
+
+            <img style="width: 30%;height: auto;" src="<%= image %>">
+            <% } else if (status === "idle") { %>
+            <i style="position: absolute;left: 715px;top: 98px;color: rgb(250, 166, 26); font-size: 1.25em;" class="fas fa-moon fa-lg"></i>
+
+            <p class="subtitle is-5">Lana est actuellement connecter mais en AFK vous devriez plûtot attendre son arriver</p>
+            <p class="subtitle is-5">Tenez votre pyjama afin de regarder des hentai dans votre lit</p>
+
+            <img style="width: 30%;height: auto;" src="https://media1.auchan.fr/images/hc6/h3a/11825746903070.jpg"
+            <% } else if (status === "dnd") { %>
+            <i style="position: absolute;left: 715px;top: 98px;color: rgb(240, 71, 71); font-size: 1.25em;" class="fas fa-minus-circle fa-lg"></i>
+
+            <p class="subtitle is-5">Lana est actuellement en ne pas déranger</p>
+            <p class="subtitle is-5">Tenez un lien pour acheter hentai nazi</p>
+
+            <a style="color: #7289da" class="qsjkdqsj" href="https://store.steampowered.com/app/1554700/Inglorious_Waifu_VS_Nazi_Zombies/">Inglorious Waifu VS Nazi Zombies</a>
+            <% } else if (status === "online") { %>
+            <i style="position: absolute;left: 715px;top: 98px;color: rgb(67, 181, 129); font-size: 1.25em;" class="fas fa-circle fa-lg"></i>
+
+            <p class="subtitle is-5">Lana est en ligne ! IL est l'heure de simp hein</p>
+            <p class="subtitle is-5">Tenez votre costard afin de pouvoir simp en toute classe</p>
+
+            <img style="width: 30%;height: auto;" src="https://www.thatbritishtweedcompany.co.uk/wp-content/uploads/2018/05/Black-Herringbone-Tweed-Suit-3.jpg">
+            <% } %>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
+
+<style>
+  .qsjkdqsj:hover {
+    text-decoration: underline;
+  }
+</style>
