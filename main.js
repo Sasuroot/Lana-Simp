@@ -24,6 +24,7 @@ app.get('/', async (req, res) => {
 })
 
 client.on('ready', async () => {
+  console.log(data)
   console.log(`✔ Le bot est prêt !`);
   app.listen("80", () => console.log("✔ Le site est prêt !"))
 })
