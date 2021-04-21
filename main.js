@@ -4,7 +4,7 @@ const Discord = require("discord.js")
 const client = new Discord.Client();
 const data = process.env
 const path = require("path")
-const PORT = process.env.PORT || 3000;
+const PORT = data.port || 3000;
 
 const Neko = require("neko-love");
 const api = new Neko.Client();
