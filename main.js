@@ -2,9 +2,8 @@ const express = require("express")
 const app = express()
 const Discord = require("discord.js")
 const client = new Discord.Client();
-const data = require('dotenv').config().parsed
+const data = process.env
 const path = require("path")
-const port = process.env.PORT || 8000;
 
 const Neko = require("neko-love");
 const api = new Neko.Client();
