@@ -4,7 +4,7 @@ const Discord = require("discord.js")
 const client = new Discord.Client();
 const data = process.env
 const path = require("path")
-const port = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 
 const Neko = require("neko-love");
 const api = new Neko.Client();
@@ -27,7 +27,7 @@ app.get('/', async (req, res) => {
 client.on('ready', async () => {
   console.log(data)
   console.log(`✔ Le bot est prêt !`);
-  app.listen(port, () => console.log("✔ Le site est prêt !"))
+  app.listen(PORT, () => console.log("✔ Le site est prêt !"))
 })
 
 client.login(data.token)
