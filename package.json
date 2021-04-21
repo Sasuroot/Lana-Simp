@@ -4,15 +4,17 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src"
   },
   "author": "",
   "license": "ISC",
-   "dependencies": {
-    "express": "^4.17.1",
+  "dependencies": {
     "discord.js": "^12.5.3",
     "dotenv": "^8.2.0",
-    "path": "^0.12.7",
-    "neko-love": "^2.0.2"
+    "express": "^4.17.1",
+    "neko-love": "^2.0.2",
+    "netlify-lambda": "^2.0.4",
+    "path": "^0.12.7"
   }
 }
