@@ -4,6 +4,7 @@ const Discord = require("discord.js")
 const client = new Discord.Client();
 const data = require('dotenv').config().parsed
 const path = require("path")
+const port = process.env.PORT || 8000;
 
 const Neko = require("neko-love");
 const api = new Neko.Client();
@@ -25,7 +26,8 @@ app.get('/', async (req, res) => {
 
 client.on('ready', async () => {
   console.log(`✔ Le bot est prêt !`);
-  app.listen("80", () => console.log("✔ Le site est prêt !"))
+  app.listen("80", , () => {
+    console.log("App is running on port " + port);
 })
 
 client.login(data.token)
