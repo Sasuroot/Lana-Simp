@@ -26,7 +26,7 @@ app.get('/', async (req, res) => {
 
 client.on('ready', async () => {
   console.log(`✔ Le bot est prêt !`);
-  app.listen("80", , () => {
+  app.listen("80", () => {
     console.log("App is running on port " + port);
 })
 
